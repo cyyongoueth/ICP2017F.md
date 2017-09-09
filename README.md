@@ -1,2 +1,1 @@
-# ICP2017F.md
-# Cindy Yongoueth
+# ICP2017F
