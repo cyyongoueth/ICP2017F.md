@@ -27,6 +27,6 @@ For questions and troubleshooting, please contact:
 
 Cindy Yongoueth   
 cyyongoueth@utexas.edu    
-Please feel free to contact me!
+Please feel free to contact me! :smiley:
 
 
