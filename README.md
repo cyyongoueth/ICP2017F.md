@@ -29,7 +29,7 @@ Cindy Yongoueth
 cyyongoueth@utexas.edu    
 Please feel free to contact me! :smiley:
 
->** "I have not failed. I’ve just found 10,000 ways that won’t work.  
-[Thomas A. Edison](https://en.wikipedia.org/wiki/Thomas_Edison)
+>**"I have not failed. I’ve just found 10,000 ways that won’t work.  
+>[Thomas A. Edison](https://en.wikipedia.org/wiki/Thomas_Edison)**
 
 
