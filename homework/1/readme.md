@@ -1,8 +1,8 @@
-Last login: Sun Sep 17 13:02:37 on ttys000
-wireless-10-148-220-71:~ cindyyongoueth$ git branch master
-fatal: Not a git repository (or any of the parent directories): .git
-wireless-10-148-220-71:~ cindyyongoueth$ pwd
-/Users/cindyyongoueth
+Last login: Sun Sep 17 13:02:37 on ttys000	
+wireless-10-148-220-71:~ cindyyongoueth$ git branch master	
+fatal: Not a git repository (or any of the parent directories): .git	
+wireless-10-148-220-71:~ cindyyongoueth$ pwd	
+/Users/cindyyongoueth	
 wireless-10-148-220-71:~ cindyyongoueth$ cd git/ICP2017/homework/1
 -bash: cd: git/ICP2017/homework/1: No such file or directory
 wireless-10-148-220-71:~ cindyyongoueth$ cd git
