@@ -73,27 +73,27 @@ Fast-forward
 wireless-10-148-220-71:1 cindyyongoueth$ ls
 readme.md	test.txt
 wireless-10-148-220-71:1 cindyyongoueth$ git merge test2
-Auto-merging homework/1/test.txt
-CONFLICT (add/add): Merge conflict in homework/1/test.txt
-Automatic merge failed; fix conflicts and then commit the result.
-wireless-10-148-220-71:1 cindyyongoueth$ git checkout test2
-homework/1/test.txt: needs merge
-error: you need to resolve your current index first
-wireless-10-148-220-71:1 cindyyongoueth$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
+Auto-merging homework/1/test.txt		
+CONFLICT (add/add): Merge conflict in homework/1/test.txt		
+Automatic merge failed; fix conflicts and then commit the result.		
+wireless-10-148-220-71:1 cindyyongoueth$ git checkout test2		
+homework/1/test.txt: needs merge		
+error: you need to resolve your current index first		
+wireless-10-148-220-71:1 cindyyongoueth$ git status		
+On branch master		
+Your branch is ahead of 'origin/master' by 1 commit.		
+  (use "git push" to publish your local commits)		
 
-You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
+You have unmerged paths.		
+  (fix conflicts and run "git commit")		
+  (use "git merge --abort" to abort the merge)		
 
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
+Unmerged paths:		
+  (use "git add <file>..." to mark resolution)		
 
-	both added:      test.txt
+	both added:      test.txt		
 
-Untracked files:
+Untracked files:		
   (use "git add <file>..." to include in what will be committed)
 
 	../.test.txt.swp
@@ -187,22 +187,6 @@ On branch master
 Your branch is ahead of 'origin/master' by 3 commits.
   (use "git push" to publish your local commits)
 
-Untracked files:
-	../.test.txt.swp
-
-nothing added to commit but untracked files present
-wireless-10-148-220-71:1 cindyyongoueth$ git add test.txt
-wireless-10-148-220-71:1 cindyyongoueth$ git commit
-On branch master
-Your branch is ahead of 'origin/master' by 3 commits.
-  (use "git push" to publish your local commits)
-
-Untracked files:
-	../.test.txt.swp
-
-nothing added to commit but untracked files present
-wireless-10-148-220-71:1 cindyyongoueth$ git add test.txt.swp
-fatal: pathspec 'test.txt.swp' did not match any files
 wireless-10-148-220-71:1 cindyyongoueth$ git add test.txt
 wireless-10-148-220-71:1 cindyyongoueth$ git cd ..
 git: 'cd' is not a git command. See 'git --help'.
