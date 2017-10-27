@@ -1,0 +1,12 @@
+1. 
+a=input('input a mu value:');
+b=input('input a sigma value:');
+c=input('input a x value:');
+d=(1/(b*sqrt(2*pi)))*exp(-.5*(((c-a)/b)^2));
+disp(['The bell shaped Gaussian Probability Density is:',num2str(d)]);
+
+>> hw3_1
+input a mu value:0
+input a sigma value:2
+input a x value:1
+The bell shaped Gaussian Probability Density is:0.1760
