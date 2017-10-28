@@ -1,4 +1,4 @@
-1. 
+QUESTION 1
 a=input('input a mu value:');
 b=input('input a sigma value:');
 c=input('input a x value:');
@@ -10,3 +10,6 @@ input a mu value:0
 input a sigma value:2
 input a x value:1
 The bell shaped Gaussian Probability Density is:0.1760
+
+QUESTION 2 
+
