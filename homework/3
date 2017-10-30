@@ -33,5 +33,66 @@ ans =
   315.2179
   
  QUESTION 3 
+ 
+ QUESTION 4
+ 
+ QUESTION 5
+ 
+ QUESTION 6
+ 
+ EDITOR
+ function [T] = area(x1,y1,x2,y2,x3,y3)
+T=1/2*abs(x2*y3-x3*y2-x1*y3+x3*y1+x1*y2-x2*y1)
+a = [x1,y1];
+b = [x2,y2];
+c = [x3,y3];
+
+x = [a(1), b(1), c(1)]; 
+y = [a(2), b(2), c(2)]; 
+
+area_triangle = polyarea(x,y);
+disp(['The area of this triangle is:', num2str(area_triangle)]);
+    end
+    
+    COMMAND WINDOW
+    >> area(2,3,5,7,4,9)
+The area of this triangle is: 5
+ans =
+     5
+ 
+ QUESTION 7 
+ 
+ EDITOR
+ function p = isPrime(x)
+x=input('Enter an integer: ');
+n=length(divisors(x));
+if  n==2
+    disp(['isPrime(',num2str(x),')']);
+    disp('True');
+else 
+    disp(['isPrime(',num2str(x),')']);
+    disp('False');
+end
+
+COMMAND WINDOW
+>> primetwo
+Enter an integer: 34
+isPrime(34)
+False
+>> primetwo
+Enter an integer: 55
+isPrime(55)
+False
+>> primetwo
+Enter an integer: 12
+isPrime(12)
+False
+>> primetwo
+Enter an integer: 5
+isPrime(5)
+True
+
+QUESTION 8 
+
 
 
