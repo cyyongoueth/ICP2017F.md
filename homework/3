@@ -61,7 +61,41 @@ end
  
  QUESTION 4
  
+ 
+ 
  QUESTION 5
+ 
+  function n = getFib(n_int)
+if n_int==1||n_int==0
+    n=n_int;
+else
+    n=fibonacci(n_int-2)+fibonacci(n_int-1);
+end
+
+function x = fib(n)
+if n == -1 
+    disp('end')
+else
+    
+    fibo = isreal(n);
+    if fibo == 1
+        if n < 0
+            disp('This isn't a non negative number.')
+            x=fib(n);
+        end
+    
+       n = round(n);
+       x =getFib(n);
+   
+    elseif fibo==0
+    disp('This isn't a real number.')
+     x = fib(n);
+    end
+end
+
+ 
+ 
+ 
  
  QUESTION 6
  
@@ -118,6 +152,26 @@ isPrime(5)
 True
 
 QUESTION 8 
+
+function y = evalFunc(a,b,c,x);
+y = (a.*x^2)+(b.*x)+(c);
+case 0
+a=0
+b=0
+c=0
+case 1
+a=varargin(1)
+case 2 
+b=varargin(2)
+case 3
+c=varargin(3)
+otherwise 
+error(‘too many arguments’);
+end
+function h=genfunc(a,b,c,X);
+y=evalFunc(a,b,c,X);
+h = y;
+end
 
 
 
