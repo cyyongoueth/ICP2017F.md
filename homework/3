@@ -61,7 +61,15 @@ end
  
  QUESTION 4
  
- 
+ function [filesize,names]=dirsize(filename)
+s=dir
+t=size(s)
+disp(s)
+sizeofdir=sum([s.bytes]);
+u=['The size of directory is: ',num2str(sizeofdir), 'bytes'];
+disp(u);
+end
+
  
  QUESTION 5
  
@@ -92,9 +100,6 @@ else
      x = fib(n);
     end
 end
-
- 
- 
  
  
  QUESTION 6
