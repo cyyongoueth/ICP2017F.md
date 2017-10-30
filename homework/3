@@ -34,13 +34,38 @@ ans =
   
  QUESTION 3 
  
+EDITOR
+ function results=getPolar(inputCartesianStruct)
+    inputCartesianStruct.x = []
+    inputCartesianStruct.y = []
+    cart = isfield(inputCartesianStruct, {'x','y'})
+    if cart == 1
+        results.r = sqrt(inputCartesianStruct.x^2+inputCartesianStruct.y^2);
+        results.phi = atan(inputCartesianStruct.x./inputCartesianStruct.y);
+    else
+        disp('Your dimensions are not correct.')
+end
+ 
+
+function results=getCart(inputPolarStruct)
+    inputPolarStruct.r = []
+    inputPolarStruct.phi = []
+    cart = isfield(inputPolarStruct, {'r','phi'})
+    if cart == 1
+        results.x = inputPolarStruct.r*cos(inputPolarStruct.phi);
+        results.y = inputPolarStruct.r*sin(inputPolarStruct.phi);
+    else
+        disp('Your dimensions are not correct.')
+end
+
+ 
  QUESTION 4
  
  QUESTION 5
  
  QUESTION 6
  
- EDITOR
+EDITOR
  function [T] = area(x1,y1,x2,y2,x3,y3)
 T=1/2*abs(x2*y3-x3*y2-x1*y3+x3*y1+x1*y2-x2*y1)
 a = [x1,y1];
