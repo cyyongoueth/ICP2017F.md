@@ -1,6 +1,6 @@
-NUMBER ONE
+---NUMBER ONE
 
-PART A)
+PART A) WHILE LOOP
 
 EDITOR
 
@@ -36,7 +36,7 @@ ans =
 This is an error
 
 
-PART B)
+PART B) FOR LOOP
 
 EDITOR
 
@@ -73,5 +73,69 @@ ans =
 >> ConvertTempFor(InVec,'fsk')
 This is an error
 
-PART C)
+PART C) VECTORIZATION
+
+EDITOR
+
+function [F] = ConvertTempVec(InVec,statement)
+    InVec = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
+if statement =='C2F'
+F=InVec*(9/5)+32; 
+elseif statement =='F2C'
+F=(InVec-32)*(5/9);
+else
+disp('This is an error')
+end
+end
+
+COMMAND WINDOW
+
+>> ConvertTempVec(InVec,'C2F')
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+
+>> ConvertTempVec(InVec,'F2C')
+
+ans =
+
+  -28.8889  -26.1111  -23.3333  -20.5556  -17.7778  -15.0000  -12.2222   -9.4444   -6.6667   -3.8889   -1.1111    1.6667    4.4444
+
+
+>> ConvertTempVec(InVec,'orp')
+This is an error
+
+---NUMBER TWO
+
+FOR LOOP
+
+>> tic, ConvertTempFor(InVec,'C2F'), toc
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+Elapsed time is 0.001190 seconds.
+
+WHILE LOOP
+
+>> tic, ConvertTempWhile(InVec,'C2F'), toc
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+Elapsed time is 0.000893 seconds.
+
+VECTORIZATION
+
+tic, ConvertTempVec(InVec,'C2F'), toc
+
+ans =
+
+    -4     5    14    23    32    41    50    59    68    77    86    95   104
+
+Elapsed time is 0.000689 seconds.
 
