@@ -35,3 +35,16 @@ if N==0
     disp(error);
 end
 
+PROBLEM 2
+
+function [F]=timeFacFuncs(x,'getFacWhile','getFacFor','getFacVec')
+if x==getFacWhile
+    A=tic, timeFacFuncs(x,'getFacWhile'), toc;
+    disp('average runtime for getFacWhile: ',num2str(A));
+elseif x==getFacFor
+    B=tic, timeFacFuncs(x,'getFacFor'), toc;
+    disp('average runtime for getFacFor: ',num2str(B));
+else x==getFacVec
+      C= tic, timeFacFuncs(x,'getFacFor'), toc;
+      disp('average runtime for getFacVec: ',num2str(C));
+end
