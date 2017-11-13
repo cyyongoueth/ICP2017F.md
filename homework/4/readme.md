@@ -1,6 +1,6 @@
 NUMBER ONE
 
-A)
+PART A)
 
 EDITOR
 
@@ -12,7 +12,7 @@ function [F] = ConvertTempWhile(InVec,statement)
     while statement =='F2C'
      F=(InVec-32)*(5/9);
     end
-while statement ~= 'F2C' || 'C2F'
+while statement ~= 'F2C' | 'C2F'
     disp('This is an error')
 end
     
@@ -36,7 +36,7 @@ ans =
 This is an error
 
 
-B)
+PART B)
 
 EDITOR
 
@@ -72,3 +72,6 @@ ans =
 
 >> ConvertTempFor(InVec,'fsk')
 This is an error
+
+PART C)
+
