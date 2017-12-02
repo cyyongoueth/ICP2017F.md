@@ -112,6 +112,7 @@ plot(oddsOfWin, 'linewidth',3,'color','red')
 set(gca, 'xscale', 'log')
 
 4.
+
 function [F] = Montecarlo(S) %S stands for number of simulations
 Ncircle = []; 
 
@@ -173,6 +174,8 @@ distance =
 
 Pi is 3.0667
 
-(FIGURES FOR QUESTION 3 & 4 ARE ATTACHED IN HW FOLDER AS SCREENSHOT, I COULDNT GET THE FIG FILE TO UPLOAD USING THE ONLINE MATLAB SYSTEM)
+
+
+***(FIGURES FOR QUESTION 3 & 4 ARE ATTACHED IN HW FOLDER AS SCREENSHOT, I COULDNT GET THE FIG FILE TO UPLOAD USING THE ONLINE MATLAB SYSTEM)
 
    
