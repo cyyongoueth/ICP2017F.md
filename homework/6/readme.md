@@ -282,7 +282,8 @@ saveas(gcf,'currentPlot2.png');        % save the figure
 load('Drand.mat');
 global data 
 data = Drand;
-fminsearch(@getLogLike,[10,2])
+var = fminsearch(@getLogLike,[10,2]);
+disp(['mu =', num2str(var(1)), ' sigma =', num2str(var(2))])
 
 function logLike = getLogLike(Param)
 	global data
@@ -292,10 +293,7 @@ end
 COMMAND WINDOW
 
 >> hw_6_4
-
-ans =
-
-   -0.0820    1.0044
+mu =-0.082002 sigma =1.0044
 
 
 
